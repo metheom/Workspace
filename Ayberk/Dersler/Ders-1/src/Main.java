@@ -39,7 +39,40 @@ public class Main {
 
          */
 
-        System.out.println("Hello World" +);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("String Gir: ");
+        String str = scanner.nextLine();
+
+        int i = 0;
+        int j = str.length() - 1;
+
+
+        /*
+
+                        for( initialization ; condition ; update ){...}
+
+                        while(condition){...}
+
+         */
+
+        // M E R T
+
+        boolean isPalindrome = true;
+
+        while (i <= j) {
+            if (str.charAt(i) != str.charAt(j)) {
+                isPalindrome = false;
+                break;
+            }
+            i++; // i += 1          i = i + 1
+            j--;
+        }
+
+        if (isPalindrome) {
+            System.out.println("Palindrome!");
+        } else {
+            System.out.println("Not Palindrome!");
+        }
 
 
     }
